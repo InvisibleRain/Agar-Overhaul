@@ -1,3 +1,4 @@
+EXAMPLE CHANGE
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,9 +6,17 @@
     <meta name="viewport" content="width=device-width">
     <title>AgarPaper.io</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+    $(function(){
+      $("#gameIndex").load("Files/Pages/gameIndex.html"); 
+    });
+    </script> 
   </head>
-  <body id="view" style="background-color:gray;margin:0;">
-    <!-- Content Div -->
+  <body style="background-color:gray;margin:0;">
+    <div id="gameIndex">
+      <!-- gameIndex.html content here -->
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
